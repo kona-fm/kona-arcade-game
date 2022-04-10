@@ -1,0 +1,60 @@
+<!doctype html>
+<head> 
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        
+        <h2 class="title">Tic-Tac-Toe</h2>
+        <br>
+
+        <div id= "Enter Player">
+            <input type= "text" placeholder = "Enter Player 1" id="playerX"> 
+            <input type= "text" placeholder = "Enter Player 2" id="playerO">
+            <input type = "button" id = "submit" onclick="showNames()" value="Submit">
+            
+        </div>
+
+        <br>
+
+        <span class = "players" id = "player1"></span>
+        <span class = "players" id = "player2"></span>
+        <br>
+        <br>
+        <span id = "firstMove"></span>
+        <br>
+        <br>
+
+            <div class="board">
+                
+                <div class="cell" id = "0" ></div>
+                <div class="cell" id = "1" ></div>
+                <div class="cell" id = "2"></div>
+                <div class="cell" id = "3"></div>
+                <div class="cell" id = "4"></div>
+                <div class="cell" id = "5"></div>
+                <div class="cell" id = "6"></div>
+                <div class="cell" id = "7"></div>
+                <div class="cell" id = "8"></div>
+            </div> 
+     
+        <br>
+        
+        <h2 id = "draw"></h2>
+    
+        <h2 id = "winner"></h2>
+
+        <br>
+
+        <div>
+            <input type = "button" id = "reset" onclick="window.location.href=window.location.href" value="PLAY AGAIN">
+        </div>
+
+        
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

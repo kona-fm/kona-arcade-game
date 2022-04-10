@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray
+}
+
+section {
+    text-align: center;
+}
+
+.title {
+    font-size: 100px;
+    color: #5fd799;
+    margin: 10px auto;
+}
+
+
+.players{
+    color: rgb(166, 199, 227)
+}
+
+#submit{
+    background-color: #de99b1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+#firstMove{
+    color:white;
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 10px auto;
+    background-color: dimgray;
+    color: rgb(166, 199, 227);
+    position: relative;
+}
+
+
+.cell {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #de99b1;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+.cell:nth-child(-n + 3) {
+    border-top: none;
+}
+
+.cell:nth-child(3n + 1) {
+    border-left: none;
+}
+
+.cell:nth-child(3n + 3) {
+    border-right: none;
+}
+
+.cell:nth-last-of-type(-n + 3) {
+    border-bottom: none;
+}
+
+
+#winner {
+    color :#5fd799;
+}
+
+#draw {
+    color :#5fd799;
+}
+
+
+#reset{
+    margin :auto;
+    background-color: #de99b1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 18px;
+    display : none;
+}
+
+
+

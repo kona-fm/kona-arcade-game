@@ -1,0 +1,52 @@
+-first we need an empty board with title
+-the game should take two player names and display them
+-the grid should be clickable
+    -we need to make sure if we click on a cell that an x or o appears
+    -if the cell already has an x or o, we cannot put anything in it
+
+-we need to update the game state
+    -if it was a winning move (after 5 moves, and after every move until 9 have been made)
+
+     + we need determine/check for winning combonations
+     rows: [0,1,2], [3,4,5], [6,7,8]
+     columns: [0,3,6], [1,4,7], [2,5,8]
+     diagonals : [0,4,8], [2,4,7]
+
+     - declare winner
+
+    -else, we switch to other player
+    -if all cells have been used without winner, we declare a draw
+    -disable player clicking when game ends
+
+    -we are then able to reset game
+    -we need to reset the state to the way it was at first
+
+
+
+
+WINNER CHECKER:
+
+if (board[0] === board[1] && board[0]===board[2] ){
+    enable hidden winnder div + board[0]
+} else if (board[3] === board[4] && board[3]===board[5]){
+    enable hidden winnder div + board[3]
+} else if (board[6] === board[7] && board[6]===board[8]){
+    enable hidden winnder div + board[6]
+} else if (board[0] === board[3] && board[0]===board[6]){
+    enable hidden winnder div + board[6]
+} else if (board[1] === board[4] && board[1]===board[7]){
+    enable hidden winnder div + board[6]
+} else if (board[2] === board[5] && board[2]===board[8]){
+    enable hidden winnder div + board[6]
+} else if (board[0] === board[4] && board[0]===board[8]){
+    enable hidden winnder div + board[6]
+} else if (board[2] === board[4] && board[2]===board[7])
+
+
+maybe use the id of each cell to change color of winning combo???
+
+if (currPlayer = 'X'){
+    player 1 value is innertext of winning div
+} else {
+    player 2 value is innertext of winning dic
+}
